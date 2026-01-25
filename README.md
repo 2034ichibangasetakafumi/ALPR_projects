@@ -1,14 +1,18 @@
 # 自動車両番号認識(ALPR)システム開発
 
-深層学習を用いた高精度な日本のナンバープレート認識（Automatic License Plate Recognition）システムです。駐車場管理の省人化および車両ログの自動データベース化を目指しています。
-<img width="579" height="132" alt="image" src="https://github.com/user-attachments/assets/3754792f-3c08-44ba-b87a-83735dda6dc9" />
+深層学習を用いた高精度な日本のナンバープレート認識（Automatic License Plate Recognition）システムを開発するプロジェクトです。駐車場管理の省人化および入出庫車両ログ等の自動データベース化を目的とする
+<img width="1024" height="687" alt="image" src="https://github.com/user-attachments/assets/8caf6b75-0d5a-42dc-8dc9-f91fa3a27bda" />
 
 ## 1. プロジェクト概要
 ### 1.1 開発の目的
-OCR機能部分に深層学習を用い、エラーを極力回避した安定した動作によって、駐車場管理業務の効率化を実現します
+OCR機能に深層学習を用い、エラーを極力回避した安定した動作によって、駐車場管理業務の効率化を実現
+<img width="579" height="132" alt="image" src="https://github.com/user-attachments/assets/3754792f-3c08-44ba-b87a-83735dda6dc9" />
+<img width="88" height="43" alt="image" src="https://github.com/user-attachments/assets/7873a191-70f5-4cf5-9152-65afca2aab07" />
 
 ### 1.2 背景
-現状の目視による監視業務に対し、物体検出アルゴリズムとOCRを高度に統合することで自動化を図ります。
+現状の目視による監視業務に対し、物体検出アルゴリズムとOCRを高度に統合することで処理を自動化
+<img width="250" height="168" alt="image" src="https://github.com/user-attachments/assets/f38f71fd-1ef6-4f32-b515-8c32c424b3c1" />
+<img width="552" height="40" alt="image" src="https://github.com/user-attachments/assets/b2d73d73-ff2f-40d4-8d4f-5db7f573bd26" />
 
 ## 2. システム構成
 ### 2.1 ソフトウェアスタック
@@ -24,17 +28,32 @@ OCR機能部分に深層学習を用い、エラーを極力回避した安定�
 * **ネットワーク**: POE接続による高品質インターネット回線
 
 ## 3. 技術的アプローチ
-システムは「抽出」「検出」「加工」「認識」の4フェーズで構成されます
+システムは「抽出」「検出」「加工」「認識」の4フェーズで構成
 
-1. **フレーム抽出 (Detection)**: OpenCVによりカメラデータをフレーム化し、後続の処理に最適化します
-2. **プレート検出 (Detection)**: **YOLOv8**を採用。車両全体を捉えた後、内部のナンバープレート領域をバウンディングボックスとして抽出します。
+1. **フレーム抽出 (Detection)**: OpenCVによりカメラデータをフレーム化し、後続の処理に最適化
+2. **プレート検出 (Detection)**: **YOLOv8**を採用。車両全体を捉えた後、内部のナンバープレート領域をバウンディングボックスとして抽出
 3. **前処理 (Pre-processing)**: 
     * 歪み補正のための**射影変換 (Perspective Transform)**
     * グレースケール変換、ガウシアンフィルタによるノイズ除去
     * 適応的閾値処理による文字強調
-4. **文字認識 (Recognition)**: **LPRNet**を使用。日本特有の2段表示に対応するため、上段・下段個別の学習データ生成や日本語フォントを用いたデータ作成を行っています。
+4. **文字認識 (Recognition)**: **LPRNet**を使用。日本特有の2段表示に対応するため、上段・下段個別の学習データ生成と日本語フォントを用いたデータ作成し使用
 
-## 4. 今後の展望
+## 4. 法的問題
+ナンバープレートの個人情報問題に対応するため、本プロジェクトはPythonプログラムにより自動生成されたナンバープレートを使用することとする
+
+## 5. 今後の展望
 * **学習データの拡充**: ナンバーの種類や時間帯など、多様な条件に対応するための継続的開発
 * **機能拡充**: 通知機能、データベース連携、リアルタイム処理の実装
 * **API連携**: 入出庫システムと連携し、駐車料金計算などの自動記録を実現
+
+## 6.参考リンク
+
+* **OpenCV**
+    カメラデータのフレーム化や画像の前処理（アフィン変換、射影変換、ノイズ除去等）に使用 
+    [https://opencv.org/](https://opencv.org/)
+* **Ultralytics YOLOv8 (GitHub)**
+    車両およびナンバープレート領域を高精度に抽出するための最新物体検出モデル
+    [https://github.com/ultralytics/ultralytics](https://github.com/ultralytics/ultralytics)
+* **LPRNet (OCR)**
+   ナンバープレートの地域名、分類番号、ひらがな、一連指定番号を個別に識別する推論エンジン 
+    [https://github.com/sirius-ai/LPRNet_Pytorch](https://github.com/sirius-ai/LPRNet_Pytorch) (PyTorch実装例)
