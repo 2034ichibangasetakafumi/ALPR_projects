@@ -11,8 +11,8 @@ OCR機能に深層学習を用い、エラーを極力回避した安定した�
 
 ### 1.2 背景
 現状の目視による監視業務に対し、物体検出アルゴリズムとOCRを高度に統合することで処理を自動化
-<img width="250" height="168" alt="image" src="https://github.com/user-attachments/assets/f38f71fd-1ef6-4f32-b515-8c32c424b3c1" />
-<img width="559" height="39" alt="image" src="https://github.com/user-attachments/assets/f45c3431-a59d-47a1-9594-a20d466fb5df" />
+ <img width="250" height="168" alt="image" src="https://github.com/user-attachments/assets/f38f71fd-1ef6-4f32-b515-8c32c424b3c1" />
+ <img width="559" height="39" alt="image" src="https://github.com/user-attachments/assets/f45c3431-a59d-47a1-9594-a20d466fb5df" />
 
 ## 2. システム構成
 ### 2.1 ソフトウェアスタック
@@ -28,15 +28,15 @@ OCR機能に深層学習を用い、エラーを極力回避した安定した�
 * **ネットワーク**: POE接続による高品質インターネット回線
 
 ### 2.3 内包のプログラムについて(_anotatedは解説付きリファクタリングファイル)
--Yolo_test04.py : YOLOによるオブジェクトディテクションとナンバープレート切出し
--best.pt : LPRNET推論用のウェイト（学習済みモデル）
--extract_frames.py : 動画データを連番フレームに変換する際のフレームレート等も指定
--Ipnet.pth : LPRNETモデルデータ
--numberPlateGenarateTest02.py : 学習用のナンバープレート生成用）
--predict.py(推論と画像認識)
--split.py（生成したナンバープレートを上下に分ける（これにより各処理の精度を上げる））
--train_Ipnet.py（トレーニング用）
--yolov8n.pt(YOLO用学習済みデータ（ウェイト）)
+ -Yolo_test04.py : YOLOによるオブジェクトディテクションとナンバープレート切出し
+ -best.pt : LPRNET推論用のウェイト（学習済みモデル）
+ -extract_frames.py : 動画データを連番フレームに変換する際のフレームレート等も指定
+ -Ipnet.pth : LPRNETモデルデータ
+ -numberPlateGenarateTest02.py : 学習用のナンバープレート生成用）
+ -predict.py(推論と画像認識)
+ -split.py（生成したナンバープレートを上下に分ける（これにより各処理の精度を上げる））
+ -train_Ipnet.py（トレーニング用）
+ -yolov8n.pt(YOLO用学習済みデータ（ウェイト）)
 
 ## 3. 技術的アプローチ
 システムは「抽出」「検出」「加工」「認識」の4フェーズで構成
