@@ -7,13 +7,12 @@
 ### 1.1 開発の目的
 OCR機能に深層学習を用い、エラーを極力回避した安定した動作によって、駐車場管理業務の効率化を実現
 <img width="579" height="132" alt="image" src="https://github.com/user-attachments/assets/3754792f-3c08-44ba-b87a-83735dda6dc9" />
-<img width="88" height="43" alt="image" src="https://github.com/user-attachments/assets/7873a191-70f5-4cf5-9152-65afca2aab07" />
+<img width="275" height="142" alt="image" src="https://github.com/user-attachments/assets/ba074f3b-9c89-4aa4-8e86-4ea898749d61" />
 
 ### 1.2 背景
 現状の目視による監視業務に対し、物体検出アルゴリズムとOCRを高度に統合することで処理を自動化
 <img width="250" height="168" alt="image" src="https://github.com/user-attachments/assets/f38f71fd-1ef6-4f32-b515-8c32c424b3c1" />
-<img width="275" height="142" alt="image" src="https://github.com/user-attachments/assets/ba074f3b-9c89-4aa4-8e86-4ea898749d61" />
-
+<img width="559" height="39" alt="image" src="https://github.com/user-attachments/assets/f45c3431-a59d-47a1-9594-a20d466fb5df" />
 
 ## 2. システム構成
 ### 2.1 ソフトウェアスタック
