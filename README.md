@@ -60,11 +60,11 @@ OCR機能に深層学習を用い、エラーを極力回避した安定した�
 ## 6.参考リンク
 
 * **OpenCV**
-    カメラデータのフレーム化や画像の前処理（アフィン変換、射影変換、ノイズ除去等）に使用 
+    カメラデータのフレーム化や画像の前処理（アフィン変換、射影変換、ノイズ除去等）に使用<br> 
     [https://opencv.org/](https://opencv.org/)
 * **Ultralytics YOLOv8 (GitHub)**
-    車両およびナンバープレート領域を高精度に抽出するための最新物体検出モデル
+    車両およびナンバープレート領域を高精度に抽出するための最新物体検出モデル<br>
     [https://github.com/ultralytics/ultralytics](https://github.com/ultralytics/ultralytics)
 * **LPRNet (OCR)**
-   ナンバープレートの地域名、分類番号、ひらがな、一連指定番号を個別に識別する推論エンジン 
+   ナンバープレートの地域名、分類番号、ひらがな、一連指定番号を個別に識別する推論エンジン<br>
     [https://github.com/sirius-ai/LPRNet_Pytorch](https://github.com/sirius-ai/LPRNet_Pytorch) (PyTorch実装例)
