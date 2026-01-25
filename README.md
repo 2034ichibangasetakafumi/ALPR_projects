@@ -12,7 +12,7 @@ OCR機能に深層学習を用い、エラーを極力回避した安定した�
 ### 1.2 背景
 現状の目視による監視業務に対し、物体検出アルゴリズムとOCRを高度に統合することで処理を自動化
 <img width="250" height="168" alt="image" src="https://github.com/user-attachments/assets/f38f71fd-1ef6-4f32-b515-8c32c424b3c1" />
-<img width="552" height="40" alt="image" src="https://github.com/user-attachments/assets/b2d73d73-ff2f-40d4-8d4f-5db7f573bd26" />
+<img width="183" height="94" alt="image" src="https://github.com/user-attachments/assets/31e91588-cea8-4a4f-96eb-519af1c9139b" />
 
 ## 2. システム構成
 ### 2.1 ソフトウェアスタック
