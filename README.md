@@ -27,16 +27,16 @@ OCR機能に深層学習を用い、エラーを極力回避した安定した�
 * **演算ユニット**: 汎用PC（NVIDIA CUDAによるGPU処理）
 * **ネットワーク**: POE接続による高品質インターネット回線
 
-### 2.3 内包のプログラムについて(_anotatedは解説付きリファクタリングファイル)
- -Yolo_test04.py : YOLOによるオブジェクトディテクションとナンバープレート切出し
- -best.pt : LPRNET推論用のウェイト（学習済みモデル）
- -extract_frames.py : 動画データを連番フレームに変換する際のフレームレート等も指定
- -Ipnet.pth : LPRNETモデルデータ
- -numberPlateGenarateTest02.py : 学習用のナンバープレート生成用）
- -predict.py(推論と画像認識)
- -split.py（生成したナンバープレートを上下に分ける（これにより各処理の精度を上げる））
- -train_Ipnet.py（トレーニング用）
- -yolov8n.pt(YOLO用学習済みデータ（ウェイト）)
+### 2.3 内包のプログラムについて(_anotatedは解説付きリファクタリングファイル) 
+ * Yolo_test04.py : YOLOによるオブジェクトディテクションとナンバープレート切出し
+ * best.pt : LPRNET推論用のウェイト（学習済みモデル）
+ * extract_frames.py : 動画データを連番フレームに変換する際のフレームレート等も指定
+ * Ipnet.pth : LPRNETモデルデータ
+ * numberPlateGenarateTest02.py : 学習用のナンバープレート生成用）
+ * predict.py(推論と画像認識)
+ * split.py（生成したナンバープレートを上下に分ける（これにより各処理の精度を上げる））
+ * train_Ipnet.py（トレーニング用）
+ * yolov8n.pt(YOLO用学習済みデータ（ウェイト）)
 
 ## 3. 技術的アプローチ
 システムは「抽出」「検出」「加工」「認識」の4フェーズで構成
