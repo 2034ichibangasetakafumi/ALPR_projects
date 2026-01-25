@@ -5,7 +5,7 @@
 
 ## 1. プロジェクト概要
 ### 1.1 開発の目的
-OCR機能に深層学習を用い、エラーを極力回避した安定した動作によって、駐車場管理業務の効率化を実現
+OCR機能に深層学習を用い、エラーを極力回避した安定した動作によって駐車場管理業務の効率化を実現
 <img width="579" height="132" alt="image" src="https://github.com/user-attachments/assets/3754792f-3c08-44ba-b87a-83735dda6dc9" />
 <img width="275" height="142" alt="image" src="https://github.com/user-attachments/assets/ba074f3b-9c89-4aa4-8e86-4ea898749d61" />
 
