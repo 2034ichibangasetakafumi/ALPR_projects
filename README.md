@@ -2,7 +2,7 @@
 
 深層学習を用いた高精度な日本のナンバープレート認識（Automatic License Plate Recognition）システムを開発するプロジェクト。駐車場管理の省人化および入出庫車両ログ等の自動データベース化を目的とする
 <img width="1024" height="687" alt="image" src="https://github.com/user-attachments/assets/8caf6b75-0d5a-42dc-8dc9-f91fa3a27bda" />
-# デモ動画 (画像リンクをクリックするとYou Tubeで見れます)
+# デモ動画 (画像リンクをクリックするとYouTubeで見れます)
 [![デモ動画](https://img.youtube.com/vi/w5QBDchangs/maxresdefault.jpg)](https://www.youtube.com/watch?v=w5QBDchangs)
 ## 1. プロジェクト概要
 ### 1.1 開発の目的
