@@ -2,7 +2,8 @@
 
 深層学習を用いた高精度な日本のナンバープレート認識（Automatic License Plate Recognition）システムを開発するプロジェクト。駐車場管理の省人化および入出庫車両ログ等の自動データベース化を目的とする
 <img width="1024" height="687" alt="image" src="https://github.com/user-attachments/assets/8caf6b75-0d5a-42dc-8dc9-f91fa3a27bda" />
-
+# デモ動画
+[![車両番号認識(ALPR)システム デモ](https://img.youtube.com/vi/w5QBDchangs/0.jpg)](https://www.youtube.com/watch?v=w5QBDchangs)
 ## 1. プロジェクト概要
 ### 1.1 開発の目的
 OCR機能に深層学習を用い、エラーを極力回避した安定した動作によって駐車場管理業務の効率化を実現
