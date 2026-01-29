@@ -7,8 +7,8 @@ The main objective is to **automate parking management operations** and **build 
 
 <img width="1024" height="687" alt="image" src="https://github.com/user-attachments/assets/8caf6b75-0d5a-42dc-8dc9-f91fa3a27bda" />
 
-# Demo Video (Click the image to watch on YouTube)
-https://www.youtube.com/watch?v=KVvExKfSeIc
+## Demo Video　(Click the image below to watch the demo video on YouTube.)
+[![ALPR Demo Video](https://img.youtube.com/vi/KVvExKfSeIc/maxresdefault.jpg)](https://www.youtube.com/watch?v=KVvExKfSeIc)
 ---
 
 ## 1. Project Overview
