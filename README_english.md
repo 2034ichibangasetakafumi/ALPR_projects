@@ -1,3 +1,4 @@
+[🇯🇵 日本語版 → README_ja.md](README_ja.md)
 
 # Automatic License Plate Recognition (ALPR) System Development
 
